@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="singolo1.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="singolo1.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
+  <title>Singolo1</title>
 </head>
 <body>
   <header>
-    <h1>Singolo<span>*</span></h1>
-    <div>
-      <p>home</p>
-      <p>sevices</p>
-      <p>portfolio</p>
-      <p>about</p>
-      <p>contact</p>
+    <div class="container header">
+      <h1>Singolo<span>*</span></h1>
+      <div class="header_menu">
+        <button active>home</button>
+        <button>services</button>
+        <button>portfolio</button>
+        <button>about</button>
+        <button>contact</button>
+      </div>
     </div>
+    <div class="container header bottom"></div>
   </header>
-  <main>
-    <div class="menu">
-      <img src="" alt="vertical image">
-      <img src="" alt="horizontal image">
+  <section>
+    <div class="container slider">
+      <div class="vertical-image">
+        <img src="/assets/base.png" alt="vertical image">
+      </div>
+      <div class="horizontal-image">
+        <img src="/assets/base.png" alt="horizontal image">
+      </div>
     </div>
-    <div>
+    <div class="container slider bottom"></div>
+  </section>
+  <section>
+    <div class="container services">
       <h2>Our services</h2>
-      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
     </div>
-  </main>
+    <div class="container services bottom"></div>
+  </section>
 </body>
 </html>

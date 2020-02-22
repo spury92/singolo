@@ -4,40 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="singolo1.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <title>Singolo1</title>
 </head>
 <body>
-  <header>
-    <div class="container header">
-      <h1>Singolo<span>*</span></h1>
-      <div class="header_menu">
-        <button active>home</button>
-        <button>services</button>
-        <button>portfolio</button>
-        <button>about</button>
-        <button>contact</button>
+  <div class="container header">
+    <!-- <header> -->
+    <h1>Singolo<span style="color: #f06c64;">*</span></h1>
+
+    <div class="menu">
+      <a href="#">home</a>
+      <a href="#">services</a>
+      <a href="#">portfolio</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+    </div>
+    <!-- </header> -->
+  </div>
+  <section class="container slider">
+    <div>
+      <div>
+        <img src="assets/slider/chev.svg" alt="left-chev">
+      </div>
+      <!-- <div class="vertical">
+        <img class="shadow" src="assets/slider/Shadow.svg" alt="shadow">
+        <img class="vertical base" src="assets/slider/Base.svg" alt="vertical base">
+        <img src="assets/slider/Layer5.png" alt="vertical image" height="333" width="188">
+      </div>
+      <div class="horizontal">
+        <img class="shadow" src="assets/slider/Shadow.svg" alt="shadow">
+        <img class="horizontal base" src="assets/slider/Base.svg" alt="horizontal base">
+        <img src="assets/slider/Layer6.png" alt="horizontal image" height="188" width="333">
+      </div> -->
+      <div>
+        <img class="right-chev" src="assets/slider/chev.svg" alt="right-chev">
       </div>
     </div>
-    <div class="container header bottom"></div>
-  </header>
-  <section>
-    <div class="container slider">
-      <div class="vertical-image">
-        <img src="/assets/base.png" alt="vertical image">
-      </div>
-      <div class="horizontal-image">
-        <img src="/assets/base.png" alt="horizontal image">
-      </div>
-    </div>
-    <div class="container slider bottom"></div>
   </section>
-  <section>
-    <div class="container services">
-      <h2>Our services</h2>
-      <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+  <section class="container services">
+    <div>
+      <h2 class="our-services">Our services</h2>
+      <p class="services-text">
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
+        Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+      </p>
     </div>
-    <div class="container services bottom"></div>
+    <div class="flex">
+      <div class="flex-element">
+        <img src="assets/services/pen.png" alt="pen">
+        <div class="flex-text">
+          <h2>Custom Design</h2>
+          <p>
+            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+          </p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img src="assets/services/bulb.png" alt="bulb">
+        <div class="flex-text">
+          <h2>Inovative Ideas</h2>
+          <p>
+            Quisque luctus, quam eget molestie com-modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+          </p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img src="assets/services/heart.png" alt="heart">
+        <div class="flex-text">
+          <h2>Love Is The Answer</h2>
+          <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
+            condimentum.</p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img src="assets/services/phone.png" alt="phone">
+        <div class="flex-text">
+          <h2>Responsive Layout</h2>
+          <p>
+            Sed porttitor placerat rhoncus. In at nunc tellus. 
+            Maecenas blandit nunc ligula. Prae-sent elit leo.
+          </p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img src="assets/services/bubble.png" alt="bubble">
+        <div class="flex-text">
+          <h2>24 / 7 Support</h2>
+          <p>
+            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. 
+            Nulla a sem erat. Pellen-tesque egestas venenatis lorem.
+          </p>
+        </div>
+      </div>
+      <div class="flex-element">
+        <img src="assets/services/star.png" alt="star">
+        <div class="flex-text">
+          <h2>Feel Like A Star</h2>
+          <p>
+            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>

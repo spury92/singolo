@@ -46,25 +46,21 @@ h1 {
 }
 .menu {
   padding-top: 44px;
-  padding-left: 15px;
-  width: 50%;
+  /* padding-right: 15px; */
+  width: 55%;
   /* padding-left: ; */
-  text-align: left;
+  text-align: right;
   display: flex;
   flex-direction: row;
-  text-align: right;
-  /* width: 44%; */
   border: 2px solid blue;
 
 }
 .menu a {
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: none;
   font-size: 12px;
   line-height: 6px;
-  font-family: "Lato";
-  /* vertical-align: middle; */
   /* border: 2px solid green; */
 }
 .menu a::before {
@@ -137,7 +133,7 @@ button.right {
 
   padding: 43px 40px;
   color: #767e9e;
-  font-family: "Lato";
+  /* font-family: "Lato"; */
   letter-spacing: -0.01em;
   text-align: left;
 }
@@ -179,14 +175,6 @@ button.right {
   line-height: 18px;
   font-weight: 900;
   text-align: left;
-}
-.flex img {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-  padding: 0.8em;
-  border-radius: 100%;
-  border: 2px solid #666d89;
 }
 
 .flex-element.flex-text {

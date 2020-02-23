@@ -1,6 +1,22 @@
+@font-face {
+  font-family: Lato;
+  src: url(assets/Lato/Lato-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url(assets/Lato/Lato-Bold.ttf);
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: Lato;
+  src: url(assets/Lato/Lato-Black.ttf);
+  font-weight: 900;
+}
+
 body {
-  /* padding: 0;
-  margin: 0; */
   font-family: 'Lato';
   width: 1020px;
   margin: 0 auto;
@@ -19,26 +35,27 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  letter-spacing: -0.05em;
 }
 h1 {
-  padding-top: 10px;
-  padding-left: 40px;
-  width: 30%;
+  padding-top: 12px;
+  padding-left: 39px;
+  width: 67%;
   color: #ffffff;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0.001em;
   /* text-align: left; */
   /* border: 2px solid red; */
 }
 .menu {
-
-  padding-top: 40px;
-  padding-right: 35px;
+  padding-top: 46px;
+  padding-right: 39px;
   /* text-align: right; */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 40%;
+  justify-content: space-between;
+  width: 44%;
   /* border: 2px solid blue; */
 
 }
@@ -56,8 +73,9 @@ h1 {
 }
 .menu a::before {
   content: '·';
-  color: #494e62;
-  padding: 0 1.2em;
+  /* color: #494e62; */
+  color: red;
+  padding: 0 1.1em;
 }
 
 .menu a:first-child::before {
@@ -69,59 +87,110 @@ h1 {
 
 /* slider styles */
 .slider {
-  height: 600px;
+  height: 585px;
   background-color: #f06c64;
   border-bottom: 15px solid #ea676b;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle;
 }
 
-.shadow {
-  position: absolute;
-  z-index: 0;
+.vertical {
+  position: relative;
+  object-fit: scale-down;
+  margin-left: -17px;
+  padding-top: 4px;
+  /* border: orangered solid; */
+}
+.horizontal {
+  position: relative;
+  object-fit: scale-down;
+  /* border: orangered solid; */
+  margin-left: -10px;
+  margin-top: 4px;
 }
 
-.horizontal .shadow {
-  transform: rotate(90deg);
-  /* transform: rotate(90deg); */
-  /* transform: rotateX(180deg); */
-}
-.vertical.base {
-  transform: rotate(90deg);
-  position: absolute;
-  /* box-shadow: 24px 0px 0px 0px black; */
-  /* box-shadow: inset 5em 5em black; */
-}
-.horizontal.base {
-  position: absolute;
-}
+/* Next & previous buttons */
+button {
+  cursor: pointer;
+  position: relative;
+  top: 45%;
+  /* width: 50%; */
+  /* margin-top: -22px; */
+  padding: 1.3em 1.2em;
+  background: none;
+  border: none;
+  color: #ca4549;
+  /* border: orangered solid; */
 
-.right-chev {
+}
+button.right {
   transform: rotate(180deg);
+  background-color: transparent;
+  padding: 1em 1.1em;
 }
+
 
 /* services styles */
-.container.services{
+.services{
   height: 495px;
+  width: 940px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
+
+  padding: 43px 40px;
+  color: #767e9e;
+  font-family: "Lato";
+  letter-spacing: -0.01em;
+  text-align: left;
 }
 
+.services h2 {
+  text-transform: capitalize;
+}
+
+.services-container h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+.services-text {
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  /* color: #767e9e; */
+  /* font-family: "Lato"; */
+  font-weight: 300;
+}
 .flex {
   display: flex;
-  /* flex-direction: row;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; */
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 33%;
 }
 
+.flex-element h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  text-align: left;
+}
 .flex img {
   width: 32px;
   height: 32px;
-  padding: 5rem;
-  border-radius: 50%;
-  /* position: fixed; */
-  /* z-index: 1; */
-  
-  /* background-color: #eb5055; */
+  object-fit: cover;
+  padding: 0.8em;
+  border-radius: 100%;
   border: 2px solid #666d89;
 }
 
@@ -130,8 +199,8 @@ h1 {
   height: 128px;
   font-size: 12px;
   line-height: 22px;
-  color: #767e9e;
-  font-family: "Lato";
+  /* color: #767e9e; */
+  /* font-family: "Lato"; */
   font-weight: 400;
-  text-align: left;
+  /* text-align: left; */
 }

@@ -1,0 +1,8 @@
+@import './fonts.css';
+
+body {
+  font-family: 'Lato';
+  width: 1020px;
+  margin: 0 auto;
+}
+

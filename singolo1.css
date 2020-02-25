@@ -1,23 +1,7 @@
-@font-face {
-  font-family: Lato;
-  src: url(assets/Lato/Lato-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: Lato;
-  src: url(assets/Lato/Lato-Bold.ttf);
-  font-weight: 700;
-  font-style: bold;
-}
-@font-face {
-  font-family: Lato;
-  src: url(assets/Lato/Lato-Black.ttf);
-  font-weight: 900;
-}
+@import './fonts.css';
 
 body {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   width: 1020px;
   margin: 0 auto;
 }
@@ -133,7 +117,6 @@ button.right {
 
   padding: 43px 40px;
   color: #767e9e;
-  /* font-family: "Lato"; */
   letter-spacing: -0.01em;
   text-align: left;
 }
@@ -152,8 +135,6 @@ button.right {
   height: 57px;
   font-size: 18px;
   line-height: 30px;
-  /* color: #767e9e; */
-  /* font-family: "Lato"; */
   font-weight: 300;
 }
 .flex {
@@ -182,8 +163,5 @@ button.right {
   height: 128px;
   font-size: 12px;
   line-height: 22px;
-  /* color: #767e9e; */
-  /* font-family: "Lato"; */
   font-weight: 400;
-  /* text-align: left; */
 }

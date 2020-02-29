@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./singolo3.css">
   <title>Singolo3</title>
 </head>
+
 <body>
   <section class="quote-section">
     <div class="container">
       <div class="quote">
         <h2 class="quote__header">Get a Quote</h2>
         <p class="quote__text">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
           nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh.
         </p>
       </div>
-      <form class="forms" action="#" method="post">
-        <input id="name" name="name" value="Name (Required)">
-        <input id="email" name="email" value="Email (Required)">
-        <input id="subject" name="subject" value="Subject">
-        <input id="description" name="description" value="Describe your project in detail...">
-      </form>
-      <div class="contact-info">
-        <h3 class="contact-info__header">Contact Information</h3>
-        <p class="contact-info__text">
-          Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet 
-          volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
-        </p>
-        <div class="contacts">
-          <div class="contact-address">Elm St. 14/05 Lost City </div>
-          <div class="contact-phone-number"> 03528 331 86 35 </div>
-          <div class="contact-email">info@singolo.com</div>
+      <div class="form-and-contacts flex">
+        <div class="flex">
+          <form class="forms" action="#" method="post">
+            <input class="input" type="text" placeholder="Name (Required)">
+            <input class="input" type="text" placeholder="Email (Required)">
+            <input class="input" type="text" placeholder="Subject">
+            <textarea class="input" rows="8" cols="10" placeholder="Describe your project in detail..."></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3 class="contact-info__header">Contact Information</h3>
+          <p class="contact-info__text">
+            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet
+            volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+          </p>
+          <div class="contact-links">
+            <div class="contact-address">
+              <a href="https://goo.gl/maps/FJgu4voYTrjmqEzm9">Elm St. 14/05 Lost City</a>
+            </div>
+            <div class="contact-phone">
+              <a href="tel:03528 331 86 35">03528 331 86 35</a>
+            </div>
+            <div class="contact-email">
+              <a href="mailto:info@singolo.com">info@singolo.com</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="flex">
-    <div class="copyright"></div>
-    <div class="social-media"></div>
+  <footer>
+    <div class="container flex">
+      <div class="copyright">
+        <object data="./assets/contacts/copyright.svg" type="image/svg+xml"></object>
+      </div>
+      <div class="social-media flex">
+        <a href="#">
+          <object class="social-media-icon facebook" data="./assets/about/ico-facebook.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object class="social-media-icon google-plus" class="social-media-icon" data="./assets/about/ico-google-plus.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object class="social-media-icon twitter" data="./assets/about/ico-twitter.svg" type="image/svg+xml"></object>
+        </a>
+        <a href="#">
+          <object class="social-media-icon linkedin" data="./assets/about/ico-linkedin.svg" type="image/svg+xml"></object>
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>

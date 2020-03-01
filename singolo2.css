@@ -29,7 +29,6 @@ h3 {
   font-size: 18px;
   color: #666d89;
   text-align: justify;
-  /* font-weight: 700; */
 }
 .flex {
   display: flex;
@@ -42,6 +41,10 @@ h3 {
 .portfolio {
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
+  /*
+  -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.4);  // Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+
+  -moz-box-shadow:    3px 3px 5px 6px rgba(0, 0, 0, 0.4);  // Firefox 3.5 - 3.6
+  box-shadow:         3px 3px 5px 6px rgba(0, 0, 0, 0.4);  // Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 p {
   padding: 0;
@@ -75,7 +78,8 @@ button {
   border: 1px solid #666d89;
   cursor: pointer;
 }
-button:hover
+button:hover,
+button:focus
 {
   color: #dedede;
   outline: none;
@@ -153,16 +157,16 @@ div.examples {
   justify-content: center;
   align-items: center;
   transition: background-color .15s ease;
+  
 }
 .facebook {
   padding-left: 4px;
 }
-.social-media a:hover,
-.social-media a:focus
- {
-  background-color: #666d89;
-  fill: blue !important;
-  color: #000 !important;
+.social-media a:hover
+,.social-media a:focus
+{
+  border: 1px solid #2d303a;;
+  background-color: #fff;
 }
 .social-media-icon {
   height: 14px;

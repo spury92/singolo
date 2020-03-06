@@ -9,26 +9,29 @@
 <body>
   <header>
     <div class="container flex">
-      <h1 class="headers logo">Singolo</h1>
-
-      <nav class="header__menu">
-        <a href="#">home</a>
-        <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
+      <a href="#">
+        <h1 class="headers logo">Singolo</h1>
+      </a>
+      <nav>
+        <ul class="header__menu">
+          <li><a href="#">home</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
   <section id="slider">
     <div class="container flex">
       <div>
-        <button class="slider__button">
+        <button class="slider__button left">
           <img src="assets/slider/chev.svg" alt="arrow left">
         </button>
       </div>
-      <img class="vertical-image" src="assets/slider/iPhone_vertical.png" alt="iPhone_vertical">
-      <img class="horizontal-image" src="assets/slider/iPhone_horizontal.png" alt="iPhone_horizontal">
+      <img class="vertical-image" src="assets/slider/iPhone_vertical.png" alt="iPhone vertical">
+      <img class="horizontal-image" src="assets/slider/iPhone_horizontal.png" alt="iPhone horizontal">
       <div>
         <button class="slider__button right">
           <img src="assets/slider/chev.svg" alt="arrow right">
@@ -108,7 +111,7 @@
   <section id="portfolio">
     <div class="container">
       <h2 class="headers">Portfolio</h2>
-      <p>
+      <p class="portfolio__text">
         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
       </p>
       <nav class="portfolio__menu flex">
@@ -233,8 +236,6 @@
       </div>
     </div>
   </section>
-
-
   <section id="contacts">
     <div class="container">
       <div class="quote">
@@ -279,9 +280,7 @@
   <footer>
     <div class="container flex">
       <div class="copyright">
-        <object data="./assets/contacts/copyright.svg" type="image/svg+xml">
-          Your browser does not support SVG
-        </object>
+        <p class="copyright__text">&#169;Copyright 2013 &#183</p>
       </div>
       <div class="social-media flex">
         <a href="#">

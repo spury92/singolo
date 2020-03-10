@@ -27,7 +27,6 @@ body {
 h2 {
   padding-top: 70px;
   padding-bottom: 10px;
-  /* font-size: 3rem; */
   font-size: 1.8rem;
   line-height: 18px;
   text-transform: capitalize;
@@ -76,29 +75,34 @@ a {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 3px;
-  width: 30%;
+  max-width: 50%;
 }
-ul {
-  list-style: none;
-}
+
 .header__menu a {
   color: #ffffff;
   font-size: 1.2rem;
   line-height: 12px;
   font-weight: 700;
-  /* padding: 0 0 0 28px; */
+  padding-left: 28px;
+  /* justify-content: space-between; */
 }
 
-.header__menu a::before {
-  content: '.';
+.header__menu a:not(:last-child)::after {
+  position: absolute;
+  padding-right: 15px;
+  top: 0;
+  display: block;
   color: #494e62;
-  padding: 0 1.06em;
-
 }
+
 .logo:hover,
 .header__menu a:hover {
   color: #f06c64;
   transition: color .1s ease-in;
+}
+
+.header__menu:first-child {
+  list-style: none;
 }
 
 /* slider styles */
@@ -316,7 +320,7 @@ h2.headers {
 .team-member__info p {
   margin: 0;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
@@ -343,10 +347,14 @@ h2.headers {
 .facebook {
   padding-left: 4px;
 }
-#about a:hover,
+#about a:hover {
+  border: 1px solid #2d303a;
+  background-color: #fff;
+}
 #about object:hover {
-  border: 1px solid #666d89;;
-  background-color: #666d89;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
 }
 .social-media-icon {
   height: 14px;
@@ -378,10 +386,11 @@ h2.headers {
 }
 
 .form-and-contacts {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 13.5px;
 }
 .forms {
+  padding-top: 5px;
   width: 604px;
   display: flex;
   flex-direction: column;
@@ -447,28 +456,53 @@ button[type="submit"]:hover {
 
 .contact-info {
   color: #f0d8d9;
-  width: 300px;
+  width: 32%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-self: flex-start;
+  /* align-items: flex-start; */
   
 }
 .contact-info__header {
   color: #f0d8d9;
+  margin: 0;
+  padding: 3px 0 10px 0;
 }
 
-.contact-links {
-  display: block;
+.contact-info__text {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  text-align: justify;
+  word-spacing: -0.05em;
+  padding-bottom: 27px;
 }
-
-.contact-links a::before {
-  position: absolute;
-  left: 0;
+.contact-links div {
+  padding-bottom: 5px;
+  padding-left: 0;
 }
 
 .contact-links a {
   text-decoration: none;
-  color: inherit
+  font-size: 1.2rem;
+  text-align: justify;
+  color: inherit;
+  vertical-align: top;
+}
+
+.contact-address object {
+  width: 10px;
+  padding: 0 9px 0 2px;
+}
+.contact-phone object {
+  width: 13px;
+  padding: 1px 10px 0 0;
+}
+
+.contact-email object {
+  width: 16px;
+  /* margin-top: 0; */
+  padding: 3px 4px 0 1px;
 }
 
 footer {
@@ -488,7 +522,7 @@ footer {
   justify-content: space-between;
 }
 footer a:hover,
-object:hover {
+footer object:hover {
   border: 1px solid #f0d8d9;;
   background-color: #f0d8d9;
 }
@@ -499,8 +533,8 @@ footer .social-media {
 }
 
 .social-media a {
-  height: 32px;
-  width: 32px;
+  height: 31px;
+  width: 31px;
   border: 1px solid #666d89;
   border-radius: 50%;
   display: flex;

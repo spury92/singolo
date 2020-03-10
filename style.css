@@ -110,9 +110,12 @@ a {
   height: 585px;
   background-color: #f06c64;
   border-bottom: 15px solid #ea676b;
-
+}
+#slider .flex {
+  padding-top: 49px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -120,14 +123,14 @@ a {
   position: relative;
   object-fit: scale-down;
   padding-top: 4px;
-  padding-left: 48px;
+  padding-left: 45px;
 
 }
 .horizontal-image {
   position: relative;
   object-fit: scale-down;
   padding-top: 3px;
-  padding-left: 73px;
+  padding-left: 70px;
 }
 
 /* Next & previous buttons */
@@ -135,7 +138,7 @@ a {
   background: none;
   border: none;
   color: #ca4549;
-  padding-left: 2px;
+  /* padding-left: 2px; */
   padding-top: 7px;
 }
 .slider__button.right {
@@ -305,7 +308,7 @@ h2.headers {
 .team-members {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 68px;
+  padding-bottom: 67px;
 }
 .team-member__info {
   flex: 0 1 30%;
